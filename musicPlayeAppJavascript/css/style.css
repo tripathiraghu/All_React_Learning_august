@@ -71,6 +71,14 @@ img{
 	object-fit: cover;
 	background-image: url(./images/default_image.jpg);
 }
+img.ImageOverlay {
+    position: fixed;
+    margin-top: 0.5%;
+    margin-left: -31.1%;
+    opacity: 0.190;
+    width: 25rem;
+    height: 25rem;
+}
 
 .music_controls{
 	width: 20rem;

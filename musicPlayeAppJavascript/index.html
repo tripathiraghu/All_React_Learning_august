@@ -17,6 +17,7 @@
 		<h3 id="artist"></h3>
 		<div class="img_container">
 			<img src="" alt="album art" class="img-container " id="image" onerror="this.src='./images/default_image.png'">
+			<img src="./images/default_image.png" class="ImageOverlay " id="image_2">
 		</div>
 		<audio src="" id="audio"></audio>
 		<!-- controls -->
@@ -33,6 +34,7 @@
 	const music = document.querySelector("audio");
 	const play = document.getElementById("play");
 	const img = document.getElementById("image");
+	const img2 = document.getElementById("image_2");
 	const title = document.getElementById("title");
 	const artist = document.getElementById("artist");
 	const prev = document.getElementById("prev");
@@ -73,6 +75,7 @@
 		music.play();
 		play.classList.replace("fa-play","fa-pause");
 		img.classList.add("anime");
+		img2.classList.add("anime");
 
 	};
 
@@ -83,6 +86,7 @@ const pauseMusic =  () => {
 		music.pause();
 		play.classList.replace("fa-pause","fa-play");
 		img.classList.remove("anime");
+		img2.classList.remove("anime");
 
 	};
 
