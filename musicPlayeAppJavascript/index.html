@@ -8,17 +8,17 @@
 	<title>Music Player</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="songsList.js"></script>
 </head>
 <body onload="loadSong(songs[songIndex])">
 <div class="main_div">
 	<div class="music_container">
 		<h2 id="title"></h2>
-		<h3 id="artist">Artist Name</h3>
+		<h3 id="artist"></h3>
 		<div class="img_container">
-			<img src="images/music-1.jpg" alt=
-			"album art" class="img-container " id="image">
+			<img src="" alt="album art" class="img-container " id="image" onerror="this.src='./images/default_image.jpg'">
 		</div>
-		<audio src="music/music-1.mp3" id="audio"></audio>
+		<audio src="" id="audio"></audio>
 		<!-- controls -->
 		<div class="music_controls">
 			<i class="fas fa-backward" id="prev" title="Previous"></i>
@@ -38,29 +38,29 @@
 	const prev = document.getElementById("prev");
 	const next = document.getElementById("next");
 
-	const songs = [
-		{
-			title : "Bekhyali",
-			artist: "NO name",
-			audio: "music-1",
-			image: "music-1"
+	// const songs = [
+	// 	{
+	// 		title : "Bekhyali",
+	// 		artist: "NO name",
+	// 		audio: "music-1",
+	// 		image: "music-1"
 
-		},
-		{
-			title : "Ghoomer",
-			artist: "Not Provided",
-			audio: "music-2",
-			image: "music-2"
+	// 	},
+	// 	{
+	// 		title : "Ghoomer",
+	// 		artist: "Not Provided",
+	// 		audio: "music-2",
+	// 		image: "music-2"
 
-		},
-		{
-			title : "Bom Digi",
-			artist: "Unknown",
-			audio: "music-3",
-			image: "music-3"
+	// 	},
+	// 	{
+	// 		title : "Bom Digi",
+	// 		artist: "Unknown",
+	// 		audio: "music-3",
+	// 		image: "music-3"
 
-		}
-	];
+	// 	}
+	// ];
 	
 
 
@@ -97,8 +97,8 @@ play.addEventListener("click", () => {
 const loadSong = (songs) => {
 	title.textContent = songs.title;
 	artist.textContent = songs.artist;
-	audio.src = `music/${songs.audio}.mp3`;
-	image.src = `images/${songs.image}.jpg`;
+	audio.src = `${songs.audio}`;
+	image.src = `${songs.image}`;
 };
 
 songIndex = 0;
