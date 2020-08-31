@@ -72,8 +72,10 @@ img{
 	background-image: url(./images/default_image.jpg);
 }
 img.ImageOverlay {
-    position: fixed;
-    
+    position: absolute;
+    width: 25rem;
+	height: 25rem;
+	margin:auto;
     opacity: 0.190;
     width: 25rem;
     height: 25rem;
