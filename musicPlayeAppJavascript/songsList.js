@@ -66,6 +66,36 @@ const songs = [
 			audio: "https://cdn5.upload.solutions/927227d2700c618f8bd20d5377d6f2e4/dligv/Tera%20Chehra%20%20Tera%20Chehra%20-(Mr-Jatt.com).mp3",
 			image: ""
 
-		}
+		},
+		{
+			title : "Dil Bechara",
+			artist: "A R Rahman",
+			audio: "https://jatt.download/dren/music/data/Hindi_Movies/202007/Dil_Bechara/128/Dil_Bechara.mp3/Dil%20Bechara.mp3",
+			image: "https://covers.mr-jatt.im/thumb/481452/Dil-Bechara.jpg"
+
+		},
+		{
+			title : "Main Tumhara",
+			artist: "A R Rahman, Jonita Gandhi, Hriday Gattani",
+			audio: "https://jatt.download/dren/music/data/Hindi_Movies/202007/Dil_Bechara/128/Main_Tumhara.mp3/Main%20Tumhara.mp3",
+			image: "https://covers.mr-jatt.im/thumb/481452/Main-Tumhara.jpg"
+
+		},
+		{
+			title : "Gajban Pani Ne Chali",
+			artist: " Sapna Choudhary, Vishvajeet Choudhary",
+			audio: "https://jatt.download/dren/music/data/Haryanvi/202002/Gajban_Pani_Ne_Chali/128/Gajban_Pani_Ne_Chali_1.mp3/Gajban%20Pani%20Ne%20Chali.mp3",
+			image: "https://cover.mr-jatt.im/thumb/487765/Gajban-Pani-Ne-Chali.jpg"
+
+		},
+		{
+			title : "Hawa Banke",
+			artist: " Darshan Raval",
+			audio: "https://jatt.download/dren/music/data/New_Talent/201907/Hawa_Banke_Darshan_Raval_Official_Song/128/Hawa_Banke_Darshan_Raval_Official_Song.mp3/Hawa%20Banke%20Darshan%20Raval%20Official%20Song.mp3",
+			image: "https://cover.mr-jatt.im/thumb/485629/Hawa-Banke.jpg"
+
+		},
+		
+		
 
 	];
